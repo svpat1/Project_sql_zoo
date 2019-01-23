@@ -3,44 +3,69 @@
 https://sqlzoo.net/wiki/SQL_Tutorial
 
 
-SELECT basics
-# 1
+## SELECT basics
+ 1.
+ ```
    SELECT population 
     FROM world
      WHERE name = 'Germany'
-   
-# 2 SELECT name, population
+ ```
+ 
+ 2. 
+ ```
+   SELECT name, population
     FROM world
      WHERE name IN ('Sweden', 'Norway', 'Denmark');   
-   
-# 3 SELECT name, area
+ ```
+ 
+ 3.
+ ```
+   SELECT name, area
     FROM world
      WHERE area BETWEEN 200000 AND 250000
+  ```
   
-SELECT names
-# 1 SELECT population 
+## SELECT names
+1.
+```
+   SELECT population 
     FROM world
      WHERE name = 'Germany'
-
-# 2 SELECT name, population 
+```
+ 
+2.
+```
+   SELECT name, population 
     FROM world
      WHERE name IN ('Sweden', 'Norway', 'Denmark');
-  
-# 3 SELECT name, area 
+```
+
+3.
+```
+   SELECT name, area 
     FROM world
      WHERE area BETWEEN 200000 AND 250000
-  
-SELECT from WORLD Tutorial
-# 1 SELECT name, continent, population 
+```  
+## SELECT from WORLD Tutorial
+1.
+```
+   SELECT name, continent, population 
     FROM world
+```
 
-# 2 SELECT name 
+2.
+```
+   SELECT name 
     FROM world
      WHERE population >= 200000000
+```
 
-# 3 SELECT name, GDP/population AS 'per capita GDP'
+3.
+```
+   SELECT name, GDP/population AS 'per capita GDP'
     FROM world
      WHERE population >= 200000000
+```
 
 #4 SELECT name, population/1000000 AS 'population in milions'
     FROM world
