@@ -4,7 +4,8 @@ https://sqlzoo.net/wiki/SQL_Tutorial
 
 
 SELECT basics
- 1 SELECT population 
+# 1
+   SELECT population 
     FROM world
      WHERE name = 'Germany'
    
